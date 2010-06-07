@@ -20,6 +20,16 @@ Errors will be logged by default to the LOCAL0 facility, and an HTML report will
 
 It would be extremely easy to add another formatter to suit any need you may have.
 
+To add more tests, just add test cases in the existing test files, or create a new directory in `tests/` then a new spec file containing any number of test cases.
+
+## Example
+Output generated in the syslog for the default tests in `tests/`:
+
+    07/06/2010 17:23:10	g5k-checks[5490]	ERROR	Ethernet link should be enabled
+    07/06/2010 17:23:10	g5k-checks[5490]	PENDING	Ethernet link should work (maybe we need to really test the link ?)
+    07/06/2010 17:23:10	g5k-checks[5490]	ERROR	Processor should have the correct frequency
+    07/06/2010 17:23:10	g5k-checks[5490]	ERROR	Processor should be of the correct model
+
 ## Authors
 
 * Cyril ROHR <cyril.rohr@irisa.fr>
