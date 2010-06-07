@@ -1,0 +1,4 @@
+production:
+  api_uri: https://api.grid5000.fr/sid
+development:
+  api_uri: https://localhost:3443/sid
