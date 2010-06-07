@@ -29,16 +29,16 @@ module Spec
         def example_failed(example, counter, failure)
           super
           message = if failure.expectation_not_met?
-            "FAILED\t#{example_group.description} #{example.description}"
+            "FAILED\t#{failure.header}: #{failure.exception.message}"
           else
-            "ERROR\t#{example_group.description} #{example.description}"
+            "ERROR\t#{failure.header}: #{failure.exception.message}"
           end
           logger.error message
         end
         
         def example_passed(example)
           super
-          logger.info "#{example_group.description} #{example.description} (OK)"
+          logger.info "OK\t#{example_group.description} #{example.description}"
         end
         
         def example_pending(example, message)

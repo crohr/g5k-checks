@@ -27,10 +27,10 @@ If you need to launch tests separately, you may define new tasks in the Rakefile
 ## Example
 Output generated in the syslog for the default tests in `tests/`:
 
-    07/06/2010 17:23:10	g5k-checks[5490]	ERROR	Ethernet link should be enabled
-    07/06/2010 17:23:10	g5k-checks[5490]	PENDING	Ethernet link should work (maybe we need to really test the link ?)
-    07/06/2010 17:23:10	g5k-checks[5490]	ERROR	Processor should have the correct frequency
-    07/06/2010 17:23:10	g5k-checks[5490]	ERROR	Processor should be of the correct model
+    07/06/2010 17:56:06	g5k-checks[5859]	OK	Ethernet link should be enabled
+    07/06/2010 17:56:06	g5k-checks[5859]	PENDING	Ethernet link should work (maybe we need to really test the link ?)
+    07/06/2010 17:56:06	g5k-checks[5859]	ERROR	Errno::ENOENT in 'Processor should have the correct frequency': No such file or directory - /proc/cpuinfo
+    07/06/2010 17:56:06	g5k-checks[5859]	ERROR	Errno::ENOENT in 'Processor should be of the correct model': No such file or directory - /proc/cpuinfo
 
 ## Authors
 
