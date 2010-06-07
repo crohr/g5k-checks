@@ -22,6 +22,8 @@ It would be extremely easy to add another formatter to suit any need you may hav
 
 To add more tests, just add test cases in the existing test files, or create a new directory in `tests/` then a new spec file containing any number of test cases.
 
+If you need to launch tests separately, you may define new tasks in the Rakefile that set a different `t.spec_files = FileList['tests/**/*_spec.rb']` line.
+
 ## Example
 Output generated in the syslog for the default tests in `tests/`:
 
