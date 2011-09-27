@@ -10,11 +10,16 @@ Install the required libs with:
 
 In the g5k-checks directory, run:
 
-    rake test
+    $ rake test
 
 Or, from any directory:
 
-    rake -f path/to/g5k-checks/Rakefile test
+    $ rake -f path/to/g5k-checks/Rakefile test
+
+You may need to use bundler to load the specific dependencies required for
+this project:
+
+    $ bundle exec rake test
 
 Errors will be logged by default to the LOCAL0 facility, and an HTML report
 will be generated at reports/tests.html. The facility may be overwritten by
